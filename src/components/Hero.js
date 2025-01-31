@@ -69,7 +69,7 @@ function Hero() {
             alt="HeroImage"
             width={5304}
             height={7952}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover rotate-[20deg] scale-[1.1]"
             placeholder="blur"
             blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAYIB//EACIQAAEDBAICAwAAAAAAAAAAAAECAwQABQYREiEHURUiYf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABkRAAMBAQEAAAAAAAAAAAAAAAABEQIhMf/aAAwDAQACEQMRAD8AfPDd6iybe40tKj2hKj2BTLl9/huuw0Rll0LJHJA7A/ahC+zl463MLy/qSVN76Vr3TOG+GLPSi4U+KmK2HH20q12CaKm9PlqeEgfGRDoa2SSaKVlP/9k="
             initial={{ opacity: 0, scale: 0.95 }}
@@ -86,34 +86,21 @@ function Hero() {
           />
         </motion.figure>
       </div>
-      <Image
-        src="/Assets/backgrounds/WaveLinesDesktop1.svg"
-        alt="BG Logo"
-        width={1920}
-        height={929}
-        className="hidden lg:block absolute h-full w-full object-cover inset-0 "
-      />
-      <Image
-        src="/Assets/backgrounds/WaveLinesDesktop2.svg"
-        alt="BG Logo"
-        width={1920}
-        height={929}
-        className="absolute top-0 left-0 "
-      />
-      <Image
-        src="/Assets/backgrounds/WaveLinesDesktop3.svg"
-        alt="BG Logo"
-        width={1920}
-        height={929}
-        className="absolute top-0 left-0 "
-      />
-      <Image
-        src="/Assets/backgrounds/WaveLinesDesktop4.svg"
-        alt="BG Logo"
-        width={1920}
-        height={929}
-        className="absolute top-0 left-0 "
-      />
+      <div className="absolute inset-0 z-0">
+        {[1, 2, 3, 4].map((num) => (
+          <Image
+            key={num}
+            src={`/Assets/backgrounds/WaveLinesDesktop${num}.svg`}
+            alt="Wave pattern"
+            width={1920}
+            height={929}
+            className={`absolute inset-0 w-full h-full ${
+              num === 1 ? "hidden lg:block " : ""
+            }`}
+            style={{ zIndex: -num }}
+          />
+        ))}
+      </div>
     </div>
   );
 }
