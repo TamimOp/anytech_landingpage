@@ -10,32 +10,48 @@ function Hero() {
     <div className="lg:h-[max(620px,_calc(92vh-49px))] h-auto relative w-full text-white lg:bg-clip-hero-container overflow-hidden pt-[30%] md:pt-[20%] lg:pt-0 max-lg:pb-[15%] svelte-n9olsd bg-blue-600">
       <div className="container relative z-10 w-full h-full md:flex md:items-center md:justify-center">
         <div className="h-fit lg:flex-[65] xl:flex-[75]">
-          <header className="max-w-2xl lg:space-y-sm space-y-[16px] mb-[32px]">
-            <h1 className="lg:max-w-max lg:whitespace-pre-line lg:text-head-1 font-Montserrat text-res-head-1 text-white">
-              Embrace the future of finance
+          <motion.header
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="space-y-6 mb-12"
+          >
+            <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">
+              Embrace the
+              <br />
+              future of finance
             </h1>
-            <h5 className="!text-white max-w-[37rem] lg:mr-5 text-res-head-5 text-blue-main lg:text-head-5 font-Montserrat">
+            <p className="text-lg md:text-xl xl:text-2xl max-w-2xl opacity-90">
               Reimagine financial services with AnyTech’s open platform,
               distributed banking solution that powers transformation
-            </h5>
-          </header>
-          <div className="flex lg:flex-row flex-col lg:space-x-[16px] space-y-4 lg:space-y-0 w-full lg:mb-0 mb-md max-w-xl">
+            </p>
+          </motion.header>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+          >
             <a
-              className="md:py-[15.5px] py-[14px] px-[42px] rounded-xs shadow-button-primary text-link text-white flex items-center justify-center space-x-[8px] bg-orange-main false"
               href="#"
+              className="inline-flex items-center bg-orange-500 px-12 py-4 rounded-lg 
+              hover:bg-orange-600 transition-colors text-lg font-medium"
             >
-              <motion.span
-                style={{ "--motion-translateX": "0px" }}
-                animate={{
-                  translateX: "var(--motion-translateX)",
-                  "--motion-translateX": "100px",
-                }}
-                transition={{ duration: 1 }}
+              Reach Out to Us
+              <svg
+                className="ml-3 w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                Reach Out to Us
-              </motion.span>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="hidden lg:block absolute top-0 xl:left-[35%] xl:w-[65%] left-1/2 lg:w-[56%] h-full bg-clip-hero-image pointer-events-none svelte-1lc7tvy">
