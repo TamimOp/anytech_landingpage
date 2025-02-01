@@ -32,8 +32,13 @@ export default {
         "5/6": "5 / 6",
       },
       colors: {
+        blue: {
+          50: "#F8FCFF",
+          600: "#2563eb",
+        },
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "custom-blue": "#F8FCFF",
       },
     },
   },
