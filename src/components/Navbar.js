@@ -12,8 +12,8 @@ function Navbar() {
                 <Image
                   src="/Assets/AnyTechLogo.svg"
                   alt="AnyTech Logo"
-                  width={138}
-                  height={92}
+                  width={170}
+                  height={32}
                 />
               </a>
             </h1>

@@ -54,6 +54,7 @@ function Hero() {
           </motion.div>
         </div>
       </div>
+
       <div className="hidden lg:block absolute top-0 xl:left-[35%] xl:w-[65%] left-1/2 lg:w-[56%] h-full bg-clip-hero-image pointer-events-none svelte-1lc7tvy">
         <motion.figure
           className="h-[115%] w-[115%] object-cover"
@@ -70,6 +71,7 @@ function Hero() {
             width={5304}
             height={7952}
             className="h-full w-full object-cover rotate-[20deg] scale-[1.1]"
+            sizes="55vw"
             placeholder="blur"
             blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAYIB//EACIQAAEDBAICAwAAAAAAAAAAAAECAwQABQYREiEHURUiYf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABkRAAMBAQEAAAAAAAAAAAAAAAABEQIhMf/aAAwDAQACEQMRAD8AfPDd6iybe40tKj2hKj2BTLl9/huuw0Rll0LJHJA7A/ahC+zl463MLy/qSVN76Vr3TOG+GLPSi4U+KmK2HH20q12CaKm9PlqeEgfGRDoa2SSaKVlP/9k="
             initial={{ opacity: 0, scale: 0.95 }}
@@ -86,6 +88,7 @@ function Hero() {
           />
         </motion.figure>
       </div>
+      <span className="absolute inset-0 z-0 bg-blue-600 -skew-x-45 transform size-[57%] lg:h-[max(620px,_calc(92vh-49px))] h-auto" />
       <div className="absolute inset-0 z-0">
         {[1, 2, 3, 4].map((num) => (
           <Image
@@ -95,7 +98,7 @@ function Hero() {
             width={1920}
             height={929}
             className={`absolute inset-0 w-full h-full ${
-              num === 1 ? "hidden lg:block " : ""
+              num === 1 ? "hidden lg:block" : ""
             }`}
             style={{ zIndex: -num }}
           />
