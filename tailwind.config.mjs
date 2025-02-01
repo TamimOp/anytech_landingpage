@@ -16,8 +16,20 @@ export default {
       },
     },
     extend: {
+      zIndex: {
+        10: 10,
+        "-10": -10,
+      },
+      boxShadow: {
+        custom: "0px 23px 30px 0px #16437763",
+        "heavy-blue": "0px 23px 30px 0px #16437763",
+      },
       skew: {
         45: "45deg",
+        12: "12deg",
+      },
+      aspectRatio: {
+        "5/6": "5 / 6",
       },
       colors: {
         background: "var(--background)",
