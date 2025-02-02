@@ -56,7 +56,7 @@ function Navbar() {
             <ul className="flex max-lg:flex-col lg:flex-row max-lg:w-full">
               <li className="w-full whitespace-nowrap group lg:py-3 lg:px-6 lg:border-b border-white border-opacity-0 hover:border-opacity-100 transition-all duration-500 cursor-pointer !border-none max-lg:py-3">
                 <span className="flex items-center justify-between">
-                  <span>Solution</span>
+                  <span>Solutions</span>
                   <svg
                     className="w-2.5 h-2.5 ms-3"
                     aria-hidden="true"

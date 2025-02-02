@@ -16,6 +16,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Montserrat", "sans-serif"],
+      },
       zIndex: {
         10: 10,
         "-10": -10,
