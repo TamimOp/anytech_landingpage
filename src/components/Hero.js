@@ -33,7 +33,7 @@ function Hero() {
           >
             <a
               href="#"
-              className="inline-flex items-center bg-orange-500 px-12 py-4 rounded-lg 
+              className="inline-flex items-center bg-orange-500 px-12 py-4 rounded-sm shadow-lg 
               hover:bg-orange-600 transition-colors text-lg font-medium"
             >
               Reach Out to Us
