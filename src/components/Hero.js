@@ -7,16 +7,16 @@ const MotionImage = motion(Image);
 
 function Hero() {
   return (
-    <div className="lg:h-[max(620px,_calc(92vh-49px))] h-auto relative w-full text-white lg:bg-clip-hero-container overflow-hidden pt-[30%] md:pt-[20%] lg:pt-0 max-lg:pb-[15%] svelte-n9olsd bg-blue-600">
+    <div className="lg:h-[max(620px,_calc(92vh-49px))] h-auto relative w-full text-white overflow-hidden pt-[30%] md:pt-[20%] lg:pt-0 max-lg:pb-[15%] bg-blue-600 bg-clip-2 ">
       <div className="container relative z-10 w-full h-full md:flex md:items-center md:justify-center">
-        <div className="h-fit lg:flex-[65] xl:flex-[75]">
+        <div className="h-fit lg:flex-[65] xl:flex-[75] ">
           <motion.header
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
             className="space-y-6 mb-12"
           >
-            <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">
+            <h1 className="text-6xl md:text-5xl xl:text-6xl font-bold leading-tight">
               Embrace the
               <br />
               future of finance
@@ -34,7 +34,7 @@ function Hero() {
             <a
               href="#"
               className="inline-flex items-center bg-orange-500 px-12 py-4 rounded-sm shadow-lg 
-              hover:bg-orange-600 transition-colors text-lg font-medium"
+              hover:bg-orange-600 transition-colors text-lg font-medium mb-4"
             >
               Reach Out to Us
               <svg
@@ -55,7 +55,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="hidden lg:block absolute top-0 xl:left-[35%] xl:w-[65%] left-1/2 lg:w-[56%] h-full bg-clip-hero-image pointer-events-none svelte-1lc7tvy">
+      <div className="hidden lg:block absolute top-0 xl:left-[35%] xl:w-[65%] left-1/2 lg:w-[56%] h-full bg-clip-hero-image pointer-events-none">
         <motion.figure
           className="h-[115%] w-[115%] object-cover"
           initial={{ x: "-12%", y: "0.126%" }}
@@ -88,7 +88,7 @@ function Hero() {
           />
         </motion.figure>
       </div>
-      <span className="absolute inset-0 z-0 bg-blue-600 -skew-x-45 transform size-[57%] lg:h-[max(620px,_calc(92vh-49px))] h-auto" />
+
       <div className="absolute inset-0 z-0">
         {[1, 2, 3, 4].map((num) => (
           <Image

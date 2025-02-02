@@ -19,3 +19,10 @@
 .clip-slant {
   clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 0% 0%);
 }
+.bg-clip-hero-image {
+  clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.bg-clip-2 {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
