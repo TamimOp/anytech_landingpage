@@ -1,7 +1,4 @@
-"use client";
 import React from "react";
-import { motion } from "framer-motion";
-import Image from "next/image";
 
 function Contact() {
   return (
@@ -15,16 +12,16 @@ function Contact() {
         <div className="absolute inset-0 bg-[url('/Assets/backgrounds/WaveLinesDesktop4.svg')] bg-cover bg-center opacity-100 " />
         <div className="absolute top-0 left-0 w-full h-[20vh] bg-white clip-slant" />
 
-        <div className="container flex flex-col items-start justify-center h-full relative z-10 px-auto gap-4">
+        <div className="container flex flex-col items-start justify-center h-full relative z-10 px-auto gap-6">
           <h2 className="text-5xl font-bold">Legacy no longer</h2>
           <p className="mt-2 text-lg">
             Talk to us to find out how we can transform your organisation for
             the future
           </p>
 
-          <div className="mt-6">
+          <div className="flex lg:flex-row flex-col lg:space-x-[16px] space-y-4 lg:space-y-0 w-full">
             <a
-              className="bg-orange-500 text-white font-semibold py-3 px-6 rounded-sm shadow-lg hover:bg-orange-600 transition"
+              className="md:py-[15.5px] py-[14px] px-[42px] rounded-sm shadow-lg text-white flex items-center justify-center space-x-[8px] bg-orange-500"
               href="#"
             >
               Contact Us ›

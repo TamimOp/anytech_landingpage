@@ -30,11 +30,11 @@ function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
+            className="flex lg:flex-row flex-col lg:space-x-[16px] space-y-4 lg:space-y-0 w-full lg:mb-0 mb-md max-w-xl mb-11"
           >
             <a
               href="#"
-              className="inline-flex items-center bg-orange-500 px-12 py-4 rounded-sm shadow-lg 
-              hover:bg-orange-600 transition-colors text-lg font-medium mb-4"
+              className="md:py-[15.5px] py-[14px] px-[42px] rounded-sm shadow-lg text-white flex items-center justify-center space-x-[8px] bg-orange-500"
             >
               Reach Out to Us
               <svg
