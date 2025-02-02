@@ -45,14 +45,14 @@ function Philosophy() {
       </motion.div>
 
       <div className="">
-        <ul className="grid lg:grid-cols-3 grid-cols-2 gap-[30px]">
+        <ul className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-4 md:gap-[30px]">
           {[1, 2, 3].map((index) => (
             <motion.li
               key={index}
-              className="bg-[#F8FCFF] p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+              className="bg-[#F8FCFF] p-4 md:p-8 rounded-xl md:rounded-2xl shadow-sm hover:shadow-md transition-shadow"
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+              viewport={{ once: true, margin: "0px 0px -50px 0px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <motion.figure
@@ -66,18 +66,18 @@ function Philosophy() {
                   alt={`phIcon${index}`}
                   width={50}
                   height={50}
-                  className="lg:h-[50px] lg:w-[50px] h-[32px] w-[32px] mb-4"
+                  className="h-[40px] w-[40px] md:h-[50px] md:w-[50px] mb-3 md:mb-4"
                   loading="lazy"
                 />
               </motion.figure>
 
-              <h4 className="font-Montserrat text-gray-900 font-semibold text-res-head-4 lg:text-head-4 mb-4 text-lg">
+              <h4 className="font-Montserrat text-gray-900 font-semibold text-base md:text-res-head-4 lg:text-head-4 mb-3 md:mb-4">
                 {index === 1 && "Full-suite solutions"}
                 {index === 2 && "Simplify the complex"}
                 {index === 3 && "Cutting-edge tech"}
               </h4>
 
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-sm md:text-base">
                 {index === 1 &&
                   "Experience the ease of integration across various banking and payment functions with our comprehensive suite of solutions."}
                 {index === 2 &&
