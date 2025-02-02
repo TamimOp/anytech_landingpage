@@ -28,10 +28,18 @@ function Philosophy() {
       >
         <Image
           src="/Assets/philosophyImage.avif"
-          alt="philosophySectionImage1"
+          alt="Our Philosophy"
           width={914}
           height={301}
           className="h-full w-full hidden md:block"
+          loading="lazy"
+        />
+        <Image
+          src="/Assets/philosophyImageMobile.avif"
+          alt="Our Philosophy Mobile"
+          width={914}
+          height={301}
+          className="h-full w-full block md:hidden"
           loading="lazy"
         />
       </motion.div>
