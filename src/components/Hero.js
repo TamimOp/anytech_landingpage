@@ -8,7 +8,7 @@ const MotionImage = motion(Image);
 function Hero() {
   return (
     <div className="lg:h-[max(620px,_calc(92vh-49px))] h-auto relative w-full text-white overflow-hidden pt-[30%] md:pt-[20%] lg:pt-0 max-lg:pb-[15%] bg-blue-600 bg-clip-2 ">
-      <div className="container relative z-10 w-full h-full md:flex md:items-center md:justify-center">
+      <div className="container mx-auto relative z-10 w-full h-full md:flex md:items-center md:justify-center">
         <div className="h-fit lg:flex-[65] xl:flex-[75] ">
           <motion.header
             initial={{ y: 20, opacity: 0 }}

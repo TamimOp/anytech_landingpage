@@ -5,7 +5,7 @@ function Footer() {
   return (
     <>
       <div className="bg-[#002045]">
-        <div className="container flex flex-col items-center lg:flex-row lg:justify-between justify-center py-11 text-center lg:text-left">
+        <div className="container mx-auto flex flex-col items-center lg:flex-row lg:justify-between justify-center py-11 text-center lg:text-left">
           <a href="#" className="flex">
             <div className="flex items-stretch bg-cover">
               <Image
@@ -38,7 +38,7 @@ function Footer() {
       </div>
 
       <div className="bg-[#00152D]">
-        <div className="container flex flex-col items-center justify-center py-6 text-blue-600 lg:flex-row lg:justify-between text-center lg:text-left">
+        <div className="container mx-auto flex flex-col items-center justify-center py-6 text-blue-600 lg:flex-row lg:justify-between text-center lg:text-left">
           <p>
             <strong>©2023 All rights reserved</strong>. Any Technology Pte Ltd.
           </p>

@@ -61,7 +61,7 @@ function AnimatedCounter({ targetNumber, suffix = "" }) {
 
 function LogoSection() {
   return (
-    <section className="mb-4 text-center">
+    <section className="container mx-auto mb-4 text-center">
       <motion.div
         initial="hidden"
         animate="visible"
@@ -75,14 +75,14 @@ function LogoSection() {
           TRUSTED BY THE BEST
         </motion.h6>
 
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 xl:mx-28 mb-8">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 xl:mx-36 mb-8">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
               variants={counterAnimation}
-              className="flex flex-col items-center border-blue-highlight pb-2"
+              className="flex flex-col items-center border-blue-highlight pb-2 "
             >
-              <h2 className="text-[64px] lg:text-[96px] font-Montserrat tracking-[-0.02em] font-semibold leading-none bg-gradient-to-b from-blue-600 to-[#0057BB] text-transparent bg-clip-text">
+              <h2 className="text-[64px] lg:text-[96px] font-Montserrat tracking-[-0.02em] font-semibold leading-none bg-gradient-to-b from-blue-600 to-[#0057BB] text-transparent bg-clip-text gap-6">
                 {stat.value > 0 && (
                   <>
                     {stat.value == 20 || stat.value == 200 ? ">" : ""}

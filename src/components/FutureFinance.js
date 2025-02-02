@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function FutureFinance() {
   return (
-    <div className="container mt-[62px]">
+    <div className="container mx-auto mt-[62px]">
       <div className="grid md:grid-cols-2 grid-cols-1 md:gap-[50px] relative items-center">
         <div className="md:space-y-sm space-y-6">
           <h6 className="text-blue-600 uppercase tracking-widest text-sm font-semibold">

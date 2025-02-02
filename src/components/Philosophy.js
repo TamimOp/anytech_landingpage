@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function Philosophy() {
   return (
-    <section className="container py-16 md:py-24">
+    <section className="container mx-auto py-16 md:py-24">
       <motion.header
         className="md:space-y-sm space-y-6 text-center"
         initial={{ opacity: 0 }}

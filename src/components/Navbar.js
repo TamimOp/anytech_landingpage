@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <div className="bg-transparent text-white max-lg:bg-blue-500 max-lg:py-4 top-0 lg:absolute w-full lg:pt-[17px] lg:pb-[25px] z-[9999]">
       <div className="relative z-[9999]">
-        <div className="container flex items-center flex-wrap justify-between">
+        <div className="container mx-auto flex items-center flex-wrap justify-between">
           <h1>
             <a className="block w-[12rem] xl:mr-8" href="#hero">
               <Image

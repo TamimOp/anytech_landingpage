@@ -56,7 +56,7 @@ function Technology() {
   };
 
   return (
-    <section className="container py-16 md:py-24">
+    <section className="container mx-auto py-16 md:py-24">
       <motion.header
         className="text-center mb-12 md:mb-20"
         initial={{ opacity: 0, y: 20 }}
