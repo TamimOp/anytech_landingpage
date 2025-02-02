@@ -106,7 +106,7 @@ function Navbar() {
           </div>
 
           <button className="border border-white bg-transparent hover:bg-white hover:text-blue-600 hidden max-lg:w-full max-lg:justify-center max-lg:mt-4 pl-6 pr-10 py-[13px] text-res-link lg:text-link lg:flex items-center group/highlight transition-all drop-shadow-button-primary hover:shadow-button-primary rounded-xs">
-            <p className="font-bold">Contact Us</p>
+            <p className="font-bold">Contact Us ›</p>
           </button>
         </div>
       </div>
